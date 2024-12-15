@@ -10,13 +10,9 @@ provider "azurerm" {
   tenant_id = var.tenant_id
 }
 
-variable "prefix" {
-  default = "terraform"
-}
-
 resource "azurerm_resource_group" "rg" {
   name     = "${var.prefix}-ResourceGroup"
-  location = "Central India"
+  location = "West Europe"
 }
 
 resource "azurerm_virtual_network" "vnet" {
@@ -73,6 +69,6 @@ resource "azurerm_virtual_machine" "vm" {
     disable_password_authentication = false
   }
   tags = {
-    environment = "staging"
+    environment = "test"
   }
 }

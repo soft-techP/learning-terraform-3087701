@@ -4,19 +4,17 @@
 #}
 
 variable "client_id" {
-  type        = string
-  default     = "0a7a99e7-bc62-4f40-9d02-4faf94350512"
+  type = string
 }
 
 variable "client_secret" {
-  type        = string
-  default = "kHO8Q~fW1B-UDc-75Pc7Tn6zwTQAX.oc0DuMafc"
+  type = string
 }
 
 variable "subscription_id" {
-  type    = string
+  type = string
 }
 
 variable "tenant_id" {
-  type    = string
+  type = string
 }

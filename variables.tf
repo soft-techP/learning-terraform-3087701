@@ -10,6 +10,7 @@ variable "client_id" {
 
 variable "client_secret" {
   type        = string
+  default = "kHO8Q~fW1B-UDc-75Pc7Tn6zwTQAX.oc0DuMafc"
 }
 
 variable "subscription_id" {
